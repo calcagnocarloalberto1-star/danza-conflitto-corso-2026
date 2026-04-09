@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Sitemap: https://calcagnocarloalberto1-star.github.io/danza-conflitto-corso-2026/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
