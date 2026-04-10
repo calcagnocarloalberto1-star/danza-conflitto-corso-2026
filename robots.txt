@@ -1,12 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /wp-admin/
-Disallow: /wp-login.php
+Sitemap: https://ladanzadelconflitto.it/sitemap.xml
 
-# Sitemaps
-Sitemap: https://mediazioneohana.org/sitemap.xml
-
-# Major search engines
 User-agent: Googlebot
 Allow: /
 
