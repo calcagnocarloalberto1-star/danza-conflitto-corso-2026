@@ -1,7 +1,12 @@
 User-agent: *
 Allow: /
-Sitemap: https://calcagnocarloalberto1-star.github.io/danza-conflitto-corso-2026/sitemap.xml
+Disallow: /wp-admin/
+Disallow: /wp-login.php
 
+# Sitemaps
+Sitemap: https://mediazioneohana.org/sitemap.xml
+
+# Major search engines
 User-agent: Googlebot
 Allow: /
 
