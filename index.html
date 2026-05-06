@@ -58,7 +58,7 @@ html{scroll-behavior:smooth}
 .aimef-badge{display:inline-block;text-align:center}
 .aimef-badge img{height:60px;width:auto;display:block}
 .aimef-badge-sm img{height:44px}
-.aimef-badge-hero img{height:130px}
+.aimef-badge-hero{max-width:min(90%,640px);width:auto}.aimef-badge-hero img{height:auto;width:100%;max-height:130px;object-fit:contain;display:block}
 .aimef-section-badge{display:flex;justify-content:center;margin-top:2rem}
 .aimef-card-badge{display:flex;align-items:center;gap:6px}
 .aimef-card-badge img{height:40px;width:auto}
@@ -470,7 +470,7 @@ svg.ico{display:inline-block;vertical-align:middle}
 
   /* ── HERO ── */
   .hero-h1{font-size:clamp(1.8rem,8vw,2.6rem)}
-  .aimef-badge-hero img{height:80px}
+  .aimef-badge-hero img{max-height:80px}
   .hero-sub,.hero-info{font-size:.82rem}
   .hero-fmt{font-size:.85rem}
   .cd-wrap{gap:.35rem}
@@ -557,7 +557,7 @@ svg.ico{display:inline-block;vertical-align:middle}
    TABLET  641–900px
 ───────────────────────────────────────────── */
 @media(min-width:641px) and (max-width:900px){
-  .aimef-badge-hero img{height:100px}
+  .aimef-badge-hero img{max-height:100px}
   .gall-sede-grid{grid-template-columns:1fr !important}
   .iscr-grid{grid-template-columns:1fr}
   .cont-grid{grid-template-columns:1fr}
@@ -581,7 +581,7 @@ svg.ico{display:inline-block;vertical-align:middle}
   .hero-h1{font-size:2rem!important;line-height:1.15!important}
   .hero-sub{font-size:.88rem!important}
   .hero-info,.hero-fmt{font-size:.75rem!important}
-  .aimef-badge-hero img{height:70px!important}
+  .aimef-badge-hero img{max-height:70px!important;height:auto!important}
   .cd-wrap{gap:.4rem!important}
   .cd-num{font-size:1.4rem!important}
   .cd-lbl{font-size:.5rem!important}
