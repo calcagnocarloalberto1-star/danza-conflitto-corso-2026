@@ -370,6 +370,12 @@ nav.desktop{display:none;align-items:center;gap:20px}
 .aimef-card-badge img{height:28px;width:auto;display:block}
 .aimef-card-badge span{font-family:'Open Sans',sans-serif;font-size:.62rem;font-weight:700;color:#555;white-space:nowrap;letter-spacing:.02em}
 
+/* RICONOSCIMENTO A.I.Me.F. */
+.aimef-materie{font-family:'Open Sans',sans-serif;font-size:.74rem;line-height:1.55;color:#555;margin-top:.55rem}
+.aimef-materie strong{color:var(--olive)}
+.aimef-riepilogo{max-width:720px;margin:1.75rem auto 0;background:#fff;border:1px solid var(--olive);border-radius:.75rem;padding:.9rem 1.25rem;text-align:center;font-family:'Open Sans',sans-serif;font-size:.85rem;line-height:1.6;color:#444}
+.aimef-riepilogo strong{color:var(--olive)}
+
 /* FAQ */
 .faq-section{padding:5rem 0 6rem;background:var(--cream)}
 .faq-list{max-width:780px;margin:0 auto}
@@ -941,7 +947,7 @@ showBannerIfNeeded();
       <div class="stat-card"><div class="stat-num">6</div><div class="stat-label">Incontri</div><div class="stat-sub">5 online + 1 presenza</div></div>
       <div class="stat-card"><div class="stat-num">18</div><div class="stat-label">Ore totali</div><div class="stat-sub">3 ore per sessione</div></div>
       <div class="stat-card"><div class="stat-num">3h</div><div class="stat-label">Laboratorio</div><div class="stat-sub">In presenza</div></div>
-      <div class="stat-card"><div class="stat-num">✓</div><div class="stat-label">Crediti</div><div class="stat-sub">richiesti</div></div>
+      <div class="stat-card"><div class="stat-num">✓</div><div class="stat-label">Crediti A.I.Me.F.</div><div class="stat-sub">18 ore riconosciute</div></div>
     </div>
     <div class="target-box fade-in-up">
       <h3>A chi è rivolto</h3>
@@ -973,6 +979,7 @@ showBannerIfNeeded();
       <p class="s-lead">6 incontri da 3 ore ciascuno. I primi 5 si tengono online, l'ultimo in presenza a Genova.</p>
     </div>
     <div class="sessioni" id="sessioni-list"></div>
+    <div class="aimef-riepilogo"><strong>Patrocinio e riconoscimento A.I.Me.F.</strong> — Prot. 199/2026 del 22 settembre 2026<br>3 ore di aggiornamento professionale continuo (A.P.C.) per ciascuna delle 6 giornate: <strong>18 ore complessive</strong>. Le materie riconosciute sono indicate in ogni sessione.</div>
     <div class="lab-banner">
       <div class="lab-hdr">
         <svg width="20" height="20" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -1487,7 +1494,7 @@ const faqs = [
   {q:"Quali sono i requisiti di partecipazione?",a:"Non sono richiesti requisiti specifici di accesso: il corso è aperto a tutti coloro che sono interessati allo studio delle dinamiche familiari. Per i mediatori familiari, sia già formati che in formazione, costituisce un'opportunità di aggiornamento professionale con strumenti avanzati."},
   {q:"Come si svolgono le sessioni online?",a:"Le sessioni online si tengono tramite piattaforma Zoom. Il link di accesso viene inviato via email prima di ogni incontro. Le sessioni sono interattive con esercitazioni pratiche, non semplici lezioni frontali."},
   {q:"Dove si svolge il laboratorio in presenza?",a:"Il laboratorio conclusivo del 19 giugno si svolge in presenza presso lo Studio di Via Giuseppe Macaggi, 23/4 — 16121 Genova (GE)."},
-  {q:"Il corso rilascia crediti formativi?",a:"Sì. Il corso rilascia un attestato di partecipazione valevole per la formazione continua ex art. 5 del Decreto 27 ottobre 2023, n. 151 (18 ore complessive). Inoltre, il Consiglio dell'Ordine degli Avvocati di Genova, con delibera del 19 novembre 2026, ha accreditato il convegno riconoscendo 3 crediti formativi ordinistici per ciascuna delle tre giornate del 27 maggio, 12 giugno e 16 dicembre 2026 (9 crediti complessivi). Per gli iscritti ad altri ordini professionali, si consiglia di verificare con il proprio ordine di appartenenza."},
+  {q:"Il corso rilascia crediti formativi?",a:"Sì. A.I.Me.F. ha concesso patrocinio e riconoscimento gratuito al corso (Prot. 199/2026 del 22 settembre 2026), riconoscendo 3 ore di aggiornamento professionale continuo (A.P.C.) per ciascuna delle sei giornate del 12, 19 e 26 novembre e del 2, 9 e 16 dicembre 2026, per un totale di 18 ore; le materie riconosciute sono indicate nel calendario di ogni sessione. Il corso rilascia un attestato di partecipazione valevole per la formazione continua ex art. 5 del Decreto 27 ottobre 2023, n. 151 (18 ore complessive). Inoltre, il Consiglio dell'Ordine degli Avvocati di Genova, con delibera del 19 novembre 2026, ha accreditato il convegno riconoscendo 3 crediti formativi ordinistici per ciascuna delle tre giornate del 27 maggio, 12 giugno e 16 dicembre 2026 (9 crediti complessivi). Per gli iscritti ad altri ordini professionali, si consiglia di verificare con il proprio ordine di appartenenza."},
   {q:"È possibile seguire solo alcune sessioni?",a:"Il corso è concepito come un percorso unitario e la frequenza di tutte le sessioni è fortemente consigliata per ricevere l'attestato. Tuttavia, per esigenze particolari è possibile contattarci per valutare soluzioni personalizzate."},
   {q:"Qual è la politica di cancellazione?",a:"Rimborso completo fino a 14 giorni prima dell'inizio del corso. Rimborso del 50% fino a 7 giorni prima. Nessun rimborso per cancellazioni successive, ma è possibile trasferire l'iscrizione a un'altra persona."},
 ];
@@ -1514,6 +1521,17 @@ const sessioni = [
   {num:5,data:"9 dicembre 2026",giorno:"Mercoledì",mod:"online",ora:"18:00 – 21:00",titolo:"Il genogramma e le lealtà familiari",desc:"Il genogramma come strumento diagnostico: mappatura emotiva su tre generazioni. Lealtà invisibili, trasmissione transgenerazionale e leggi sistemiche (Hellinger). Cicli di vita della famiglia. Esercitazione guidata di costruzione del genogramma.",norm:"Art. 5, c. 5 lett. c), d), f), q)",crediti:3},
   {num:6,data:"16 dicembre 2026",giorno:"Mercoledì",mod:"presenza",ora:"09:00 – 12:00",titolo:"Simulazioni pratiche e conclusione",desc:"Laboratorio in presenza: simulazioni di mediazione familiare con casi reali. Role playing: ogni partecipante conduce una fase di mediazione. Debriefing collettivo. Consegna degli attestati valevoli per la formazione continua ex art. 5 D.M. 151/2023.",norm:"Art. 5, c. 3 lett. b), c) · Art. 5, c. 6",crediti:3},
 ];
+const aimefMaterie = {
+  1:[["1h30","La figura del Mediatore Familiare"],["1h30","Le fasi della mediazione familiare"]],
+  2:[["1h30","I cicli di vita della coppia e della famiglia"],["1h30","La crisi della coppia e le conseguenze sul rapporto con i figli e l'intervento del Mediatore Familiare"]],
+  3:[["3h","La violenza domestica e di genere"]],
+  4:[["3h","I metodi e le tecniche di mediazione dei conflitti con particolare riguardo alla crisi coniugale e ai rapporti tra genitori e i figli"]],
+  5:[["1h30","I cicli di vita della coppia e della famiglia"],["1h30","L'approccio socio psicologico alle relazioni familiari"]],
+  6:[["3h","Attività laboratoriali svolte in presenza, su casi teorico-pratici"]],
+};
+function aimefMaterieHtml(n){
+  return (aimefMaterie[n]||[]).map(([h,m])=>`${m} (${h})`).join(' · ');
+}
 const sessList = document.getElementById('sessioni-list');
 sessioni.forEach(s=>{
   const card = document.createElement('div');
@@ -1537,8 +1555,9 @@ sessioni.forEach(s=>{
       <div class="sess-footer">
         <div class="norm-badge">D.M. 151/2023 — ${s.norm}</div>
         ${s.crediti ? `<div class="crediti-badge">⚖ Ordine Avvocati Genova — ${s.crediti} crediti formativi</div>` : ''}
-        
+        <div class="crediti-badge">🎓 A.I.Me.F. — 3 ore di aggiornamento professionale continuo</div>
       </div>
+      <div class="aimef-materie"><strong>Materie riconosciute A.I.Me.F.:</strong> ${aimefMaterieHtml(s.num)}</div>
       <div class="social-share">
         <a class="share-btn share-li" href="https://www.linkedin.com/sharing/share-offsite/?url=${url}" target="_blank" rel="noopener">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
